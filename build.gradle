@@ -47,6 +47,10 @@ dependencies {
     annotationProcessor "jakarta.persistence:jakarta.persistence-api:3.1.0"
     annotationProcessor "jakarta.annotation:jakarta.annotation-api:2.1.1"
     implementation "jakarta.persistence:jakarta.persistence-api:3.1.0"
+
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    //요놈은 타임리프랑 시큐리티를 같이 디펜던시에 추가할 때만 나오는 녀석이라 무조건 둘의 같이 넣어줘서 가져와줘야한다.
+    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
 }
 
 tasks.named('test') {
